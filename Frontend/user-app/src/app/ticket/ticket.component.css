@@ -1,0 +1,28 @@
+* {
+  font-family: Helvetica;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background for the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background for table elements */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Ensure text is visible on a transparent background */
+}
+
+.blank-child, .button-container, button {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background for other elements */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  color: white; /* Ensure button text is visible */
+}

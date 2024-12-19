@@ -1,0 +1,50 @@
+<div class="container"> 
+  <nav class="navbar">
+    <div class="container-fluid">
+      <form class="d-flex align-items-center">
+        <div class="input-group mx-2">
+          <select name="origin" style="width: 520px;" [(ngModel)]="origin" required class="form-control">
+            <option value="" disabled selected style="background-color: rgb(241, 154, 154); color: white;" >Select Origin</option>
+            <option *ngFor="let origin of origins" [value]="origin" style="background-color: rgb(241, 154, 154); color: white;">{{origin}}</option>
+          </select>
+        </div>
+        <div class="input-group mx-2">
+          <select name="destination" style="width: 520px;" [(ngModel)]="destination" required class="form-control">
+            <option value="" disabled selected style="background-color: rgb(241, 154, 154); color: white;">Select Destination</option>
+            <option *ngFor="let destination of destinations" [value]="destination" [disabled]="destination === origin " style="background-color: rgb(241, 154, 154); color: white;">{{destination}}</option>
+          </select>
+        </div>
+        <button class="btn" (click)="getRoute()" style="background-color: rgb(241, 154, 154); color: white; border: none;">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <table class="table table-bordered text-center">
+    <thead>
+      <tr>
+        <th>Origin</th>
+        <th>Destination</th>
+        <th>Distance</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{selectedRoute.origin}}</td>
+        <td>{{selectedRoute.destination}}</td>
+        <td>{{selectedRoute.distance}}</td>
+        <td><input type="date" min="today" id="dateInput" name="dateInput" [(ngModel)]="departureDate" required  style="background-color: rgb(241, 154, 154);color: white; border: none; "></td>
+        <td><select name="time" [(ngModel)]="departureTime" required style="background-color: rgb(241, 154, 154); color: white;">
+            <option selected style="background-color: rgb(241, 154, 154); color: white;">Select a time</option>
+            <option *ngFor="let time of times" style="background-color: rgb(241, 154, 154); color: white;">{{time}}</option>
+          </select>
+        </td>
+        <td>{{this.amount}}</td>
+        <td><button class="btn " (click)="bookTicket()" style="background-color: rgb(241, 154, 154); color: white; border: none;">Book Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

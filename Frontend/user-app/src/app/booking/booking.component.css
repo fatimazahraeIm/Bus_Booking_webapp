@@ -1,0 +1,44 @@
+* {
+    font-family: Helvetica;
+}
+
+.select-fill {
+    width: 100%;
+}
+
+table, th, td {
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+th {
+    color: white;
+}
+
+.navbar, .input-group, .form-control,btn{
+    background: rgba(255, 255, 255, 0); 
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+a.review:hover,
+a.cancel:hover {
+    color: blueviolet;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(306deg) brightness(101%) contrast(101%);
+}
