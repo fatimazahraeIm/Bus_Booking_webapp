@@ -24,7 +24,7 @@ Voici quelques captures d'écran du Système de Réservation de Billets de Bus e
 ### Pages de Paiement
 ![Page de Paiement 1](screenshots/payment.png)
 ![Page de Paiement 2](screenshots/payment2.png)
-![Page de Paiement 3](screenshots/payment2.png)
+![Page de Paiement 3](screenshots/payment3.png)
 
 ### Page de review
 ![Page de Review](screenshots/review.png)
